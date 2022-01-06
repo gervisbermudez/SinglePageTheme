@@ -1,10 +1,10 @@
-<ul class="navbar-nav ml-auto menu_parent">
+<ul class="navbar-nav ms-auto">
 @if($menu->menu_items)
     @foreach ($menu->menu_items as $item)
     @if(!$item->subitems)
-    <li class="nav-item {{isSectionActive($item->item_name, 1)}}">
+    <li class="nav-item mx-0 mx-lg-1 {{isSectionActive($item->item_name, 1)}}">
         <a 
-        class="nav-link" 
+        class="nav-link py-3 px-0 px-lg-3 rounde" 
         href="{{$item->item_link}}" 
         target="{{$item->item_target}}" 
         title="{{$item->item_title}}"

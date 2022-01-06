@@ -6,13 +6,14 @@
 @endisset
 <title>{{$title}}</title>
 <link rel="alternate" type="application/rss+xml" title="{{config("SITE_TITLE")}} &raquo; Feed" href="{{base_url('feed')}}" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<?php echo link_tag(getThemePublicPath() . 'css/styles.css'); ?>
 
-<!-- Bootstrap Core CSS -->
-<?php echo link_tag(getThemePublicPath() . 'bootstrap/css/bootstrap.min.css'); ?>
-<!-- Custom CSS -->
-<?php echo link_tag(getThemePublicPath() . 'css/modern-business.css'); ?>
-<!-- Custom Fonts -->
-<?php echo link_tag(getThemePublicPath() . 'font-awesome/css/font-awesome.min.css'); ?>
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>

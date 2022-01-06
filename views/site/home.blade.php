@@ -3,221 +3,202 @@
 @section('title', $title)
 
 @section('footer')
-    @include('site.shared.navbar')
+@include('site.shared.navbar')
 @endsection
 
 @section('content')
-<header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active" style="background-image: url('<?php echo base_url(getThemePublicPath()); ?>img/photo-1.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>First Slide</h3>
-                    <p>This is a description for the first slide.</p>
-                </div>
-            </div>
-            <!-- Slide Two - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('<?php echo base_url(getThemePublicPath()); ?>img/photo-2.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Second Slide</h3>
-                    <p>This is a description for the second slide.</p>
-                </div>
-            </div>
-            <!-- Slide Three - Set the background image for this slide in the line below -->
-            <div class="carousel-item" style="background-image: url('<?php echo base_url(getThemePublicPath()); ?>img/photo-3.jpg')">
-                <div class="carousel-caption d-none d-md-block">
-                    <h3>Third Slide</h3>
-                    <p>This is a description for the third slide.</p>
-                </div>
-            </div>
+<!-- Masthead-->
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="{{base_url(getThemePublicPath())}}assets/img/avataaars.svg" alt="..." />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
     </div>
 </header>
-
-<!-- Page Content -->
-<div class="container">
-
-    <h1 class="my-4">Welcome to Modern Business</h1>
-
-    <!-- Marketing Icons Section -->
-    <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">Card Title</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
-                        necessitatibus neque.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Learn More</a>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/cabin.png" alt="..." />
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">Card Title</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos,
-                        nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque
-                        exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Learn More</a>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/cake.png" alt="..." />
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 mb-4">
-            <div class="card h-100">
-                <h4 class="card-header">Card Title</h4>
-                <div class="card-body">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse
-                        necessitatibus neque.</p>
-                </div>
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary">Learn More</a>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/circus.png" alt="..." />
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- /.row -->
-
-    <!-- Portfolio Section -->
-    <h2>Portfolio Heading</h2>
-
-    <div class="row">
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project One</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam
-                        aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt,
-                        dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!</p>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/game.png" alt="..." />
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400-3.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project Two</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
+            <!-- Portfolio Item 5-->
+            <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/safe.png" alt="..." />
                 </div>
             </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400-2.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project Three</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error
-                        quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure
-                        perspiciatis mollitia recusandae vero vel quam!</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400-2.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project Four</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400-3.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project Five</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod
-                        odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-sm-6 portfolio-item">
-            <div class="card h-100">
-                <a href="#"><img class="card-img-top" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x400.jpg" alt=""></a>
-                <div class="card-body">
-                    <h4 class="card-title">
-                        <a href="#">Project Six</a>
-                    </h4>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum
-                        suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates,
-                        nemo repellat fugiat excepturi! Nemo, esse.</p>
+            <!-- Portfolio Item 6-->
+            <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="{{base_url(getThemePublicPath())}}assets/img/portfolio/submarine.png" alt="..." />
                 </div>
             </div>
         </div>
     </div>
-    <!-- /.row -->
-
-    <!-- Features Section -->
-    <div class="row">
-        <div class="col-lg-6">
-            <h2>Modern Business Features</h2>
-            <p>The Modern Business template by Start Bootstrap includes:</p>
-            <ul>
-                <li>
-                    <strong>Bootstrap v4</strong>
-                </li>
-                <li>jQuery</li>
-                <li>Font Awesome</li>
-                <li>Working contact form with validation</li>
-                <li>Unstyled page elements for easy customization</li>
-            </ul>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id
-                reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia
-                dolorum ducimus unde.</p>
+</section>
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
         </div>
-        <div class="col-lg-6">
-            <img class="img-fluid rounded" src="<?php echo base_url(getThemePublicPath()); ?>img/photo-700x450.jpg" alt="">
+        <!-- About Section Content-->
+        <div class="row">
+            <div class="col-lg-4 ms-auto">
+                <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+            </div>
+            <div class="col-lg-4 me-auto">
+                <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+            </div>
         </div>
-    </div>
-    <!-- /.row -->
-
-    <hr>
-
-    <!-- Call to Action Section -->
-    <div class="row mb-4">
-        <div class="col-md-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
-                beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-        </div>
-        <div class="col-md-4">
-            <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
+        <!-- About Section Button-->
+        <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                <i class="fas fa-download me-2"></i>
+                Free Download!
+            </a>
         </div>
     </div>
-
-</div>
-<!-- /.container -->
+</section>
+<!-- Contact Section-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <!-- Contact Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Contact Section Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                    <!-- Name input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                        <label for="name">Full name</label>
+                        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    </div>
+                    <!-- Email address input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                        <label for="email">Email address</label>
+                        <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                        <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                    </div>
+                    <!-- Phone number input-->
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                        <label for="phone">Phone number</label>
+                        <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                    </div>
+                    <!-- Message input-->
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                        <label for="message">Message</label>
+                        <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                    </div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <!-- Submit Button-->
+                    <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer-->
 @endsection
 
 @section('footer')
-    @include('site.shared.footer')
+@include('site.shared.footer')
 @endsection
